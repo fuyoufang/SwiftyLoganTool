@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		868918C06F444D19FE06BD10 /* Pods_SwiftyLoganTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78DB037ABE44AFBD1B29527 /* Pods_SwiftyLoganTool.framework */; };
+		9660186A51828E37C1783297 /* Pods_SwiftyLoganTool_SwiftyLoganToolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DA05E3F60605625E8815DA /* Pods_SwiftyLoganTool_SwiftyLoganToolUITests.framework */; };
+		A3CC026B262ECD8300E2720A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC026A262ECD8300E2720A /* AppDelegate.swift */; };
+		A3CC026D262ECD8300E2720A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC026C262ECD8300E2720A /* ContentView.swift */; };
+		A3CC026F262ECD8500E2720A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CC026E262ECD8500E2720A /* Assets.xcassets */; };
+		A3CC0272262ECD8500E2720A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CC0271262ECD8500E2720A /* Preview Assets.xcassets */; };
+		A3CC0275262ECD8500E2720A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3CC0273262ECD8500E2720A /* Main.storyboard */; };
+		A3CC0281262ECD8500E2720A /* SwiftyLoganToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC0280262ECD8500E2720A /* SwiftyLoganToolTests.swift */; };
+		A3CC028C262ECD8500E2720A /* SwiftyLoganToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC028B262ECD8500E2720A /* SwiftyLoganToolUITests.swift */; };
+		A3CC02DD262ECF6E00E2720A /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CC02D5262ECF6E00E2720A /* NSData+AES256.m */; };
+		A3CC02DE262ECF6E00E2720A /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CC02D8262ECF6E00E2720A /* LFCGzipUtility.m */; };
+		A3CC02DF262ECF6E00E2720A /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CC02DC262ECF6E00E2720A /* GTMBase64.m */; };
+		A3CC02EC262ED04800E2720A /* DecryptTogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC02EA262ED04800E2720A /* DecryptTogView.swift */; };
+		A3CC02ED262ED04800E2720A /* EncryptTogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC02EB262ED04800E2720A /* EncryptTogView.swift */; };
+		A3CC02F3262ED19000E2720A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC02F2262ED19000E2720A /* Config.swift */; };
+		A3CC02FB262ED21300E2720A /* LoganManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC02FA262ED21300E2720A /* LoganManager.swift */; };
+		A3CC0301262ED24500E2720A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC0300262ED24500E2720A /* String+Extension.swift */; };
+		DD5AC2A925BB5371EE272F1C /* Pods_SwiftyLoganToolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E769B01FBD7386EEEC81257A /* Pods_SwiftyLoganToolTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3CC027D262ECD8500E2720A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3CC025F262ECD8300E2720A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3CC0266262ECD8300E2720A;
+			remoteInfo = SwiftyLoganTool;
+		};
+		A3CC0288262ECD8500E2720A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3CC025F262ECD8300E2720A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3CC0266262ECD8300E2720A;
+			remoteInfo = SwiftyLoganTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		310C3B1D86D469208CEE7892 /* Pods-SwiftyLoganTool-SwiftyLoganToolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyLoganTool-SwiftyLoganToolUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftyLoganTool-SwiftyLoganToolUITests/Pods-SwiftyLoganTool-SwiftyLoganToolUITests.release.xcconfig"; sourceTree = "<group>"; };
+		85D221C4D9B1F4DDDEAF41C5 /* Pods-SwiftyLoganToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyLoganToolTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftyLoganToolTests/Pods-SwiftyLoganToolTests.release.xcconfig"; sourceTree = "<group>"; };
+		89F495EEC4075BA39C4C6883 /* Pods-SwiftyLoganToolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyLoganToolTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyLoganToolTests/Pods-SwiftyLoganToolTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B01F7C7AC5C2536A2B1E66A /* Pods-SwiftyLoganTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyLoganTool.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyLoganTool/Pods-SwiftyLoganTool.debug.xcconfig"; sourceTree = "<group>"; };
+		A3CC0267262ECD8300E2720A /* SwiftyLoganTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyLoganTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CC026A262ECD8300E2720A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3CC026C262ECD8300E2720A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A3CC026E262ECD8500E2720A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3CC0271262ECD8500E2720A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A3CC0274262ECD8500E2720A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3CC0276262ECD8500E2720A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3CC0277262ECD8500E2720A /* SwiftyLoganTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftyLoganTool.entitlements; sourceTree = "<group>"; };
+		A3CC027C262ECD8500E2720A /* SwiftyLoganToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyLoganToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CC0280262ECD8500E2720A /* SwiftyLoganToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLoganToolTests.swift; sourceTree = "<group>"; };
+		A3CC0282262ECD8500E2720A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3CC0287262ECD8500E2720A /* SwiftyLoganToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyLoganToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CC028B262ECD8500E2720A /* SwiftyLoganToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLoganToolUITests.swift; sourceTree = "<group>"; };
+		A3CC028D262ECD8500E2720A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3CC02C7262ECEA800E2720A /* SwiftyLoganTool-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftyLoganTool-Bridging-Header.h"; sourceTree = "<group>"; };
+		A3CC02D5262ECF6E00E2720A /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
+		A3CC02D6262ECF6E00E2720A /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
+		A3CC02D8262ECF6E00E2720A /* LFCGzipUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCGzipUtility.m; sourceTree = "<group>"; };
+		A3CC02D9262ECF6E00E2720A /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		A3CC02DA262ECF6E00E2720A /* LFCGzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCGzipUtility.h; sourceTree = "<group>"; };
+		A3CC02DB262ECF6E00E2720A /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		A3CC02DC262ECF6E00E2720A /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		A3CC02EA262ED04800E2720A /* DecryptTogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecryptTogView.swift; sourceTree = "<group>"; };
+		A3CC02EB262ED04800E2720A /* EncryptTogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptTogView.swift; sourceTree = "<group>"; };
+		A3CC02F2262ED19000E2720A /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		A3CC02FA262ED21300E2720A /* LoganManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoganManager.swift; sourceTree = "<group>"; };
+		A3CC0300262ED24500E2720A /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B34139AB50389962AC1BBF61 /* Pods-SwiftyLoganTool-SwiftyLoganToolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyLoganTool-SwiftyLoganToolUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyLoganTool-SwiftyLoganToolUITests/Pods-SwiftyLoganTool-SwiftyLoganToolUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5DA05E3F60605625E8815DA /* Pods_SwiftyLoganTool_SwiftyLoganToolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyLoganTool_SwiftyLoganToolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E769B01FBD7386EEEC81257A /* Pods_SwiftyLoganToolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyLoganToolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E78DB037ABE44AFBD1B29527 /* Pods_SwiftyLoganTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyLoganTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87930A780F1B712C1546534 /* Pods-SwiftyLoganTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyLoganTool.release.xcconfig"; path = "Target Support Files/Pods-SwiftyLoganTool/Pods-SwiftyLoganTool.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3CC0264262ECD8300E2720A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				868918C06F444D19FE06BD10 /* Pods_SwiftyLoganTool.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CC0279262ECD8500E2720A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5AC2A925BB5371EE272F1C /* Pods_SwiftyLoganToolTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CC0284262ECD8500E2720A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9660186A51828E37C1783297 /* Pods_SwiftyLoganTool_SwiftyLoganToolUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94C82BB327F977B7705543F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E78DB037ABE44AFBD1B29527 /* Pods_SwiftyLoganTool.framework */,
+				D5DA05E3F60605625E8815DA /* Pods_SwiftyLoganTool_SwiftyLoganToolUITests.framework */,
+				E769B01FBD7386EEEC81257A /* Pods_SwiftyLoganToolTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3CC025E262ECD8300E2720A = {
+			isa = PBXGroup;
+			children = (
+				A3CC0269262ECD8300E2720A /* SwiftyLoganTool */,
+				A3CC027F262ECD8500E2720A /* SwiftyLoganToolTests */,
+				A3CC028A262ECD8500E2720A /* SwiftyLoganToolUITests */,
+				A3CC0268262ECD8300E2720A /* Products */,
+				D9775E46F7CD256594F6D7FD /* Pods */,
+				94C82BB327F977B7705543F0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A3CC0268262ECD8300E2720A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC0267262ECD8300E2720A /* SwiftyLoganTool.app */,
+				A3CC027C262ECD8500E2720A /* SwiftyLoganToolTests.xctest */,
+				A3CC0287262ECD8500E2720A /* SwiftyLoganToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3CC0269262ECD8300E2720A /* SwiftyLoganTool */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC02E9262ED03700E2720A /* Example */,
+				A3CC02E8262ED01B00E2720A /* Tool */,
+				A3CC02E7262ED00400E2720A /* Data */,
+				A3CC026A262ECD8300E2720A /* AppDelegate.swift */,
+				A3CC026C262ECD8300E2720A /* ContentView.swift */,
+				A3CC026E262ECD8500E2720A /* Assets.xcassets */,
+				A3CC0273262ECD8500E2720A /* Main.storyboard */,
+				A3CC0276262ECD8500E2720A /* Info.plist */,
+				A3CC0277262ECD8500E2720A /* SwiftyLoganTool.entitlements */,
+				A3CC0270262ECD8500E2720A /* Preview Content */,
+				A3CC02C7262ECEA800E2720A /* SwiftyLoganTool-Bridging-Header.h */,
+			);
+			path = SwiftyLoganTool;
+			sourceTree = "<group>";
+		};
+		A3CC0270262ECD8500E2720A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC0271262ECD8500E2720A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A3CC027F262ECD8500E2720A /* SwiftyLoganToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC0280262ECD8500E2720A /* SwiftyLoganToolTests.swift */,
+				A3CC0282262ECD8500E2720A /* Info.plist */,
+			);
+			path = SwiftyLoganToolTests;
+			sourceTree = "<group>";
+		};
+		A3CC028A262ECD8500E2720A /* SwiftyLoganToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC028B262ECD8500E2720A /* SwiftyLoganToolUITests.swift */,
+				A3CC028D262ECD8500E2720A /* Info.plist */,
+			);
+			path = SwiftyLoganToolUITests;
+			sourceTree = "<group>";
+		};
+		A3CC02D4262ECF6E00E2720A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC02D5262ECF6E00E2720A /* NSData+AES256.m */,
+				A3CC02D6262ECF6E00E2720A /* NSData+AES256.h */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A3CC02D7262ECF6E00E2720A /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC02DB262ECF6E00E2720A /* GTMDefines.h */,
+				A3CC02D9262ECF6E00E2720A /* GTMBase64.h */,
+				A3CC02DC262ECF6E00E2720A /* GTMBase64.m */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		A3CC02E3262ECF8200E2720A /* LFCGzipUtility */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC02D8262ECF6E00E2720A /* LFCGzipUtility.m */,
+				A3CC02DA262ECF6E00E2720A /* LFCGzipUtility.h */,
+			);
+			path = LFCGzipUtility;
+			sourceTree = "<group>";
+		};
+		A3CC02E7262ED00400E2720A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A3CC02E8262ED01B00E2720A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC02E3262ECF8200E2720A /* LFCGzipUtility */,
+				A3CC02D4262ECF6E00E2720A /* Extension */,
+				A3CC02D7262ECF6E00E2720A /* GTMBase64 */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		A3CC02E9262ED03700E2720A /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC02FF262ED23000E2720A /* Extension */,
+				A3CC02FA262ED21300E2720A /* LoganManager.swift */,
+				A3CC02EA262ED04800E2720A /* DecryptTogView.swift */,
+				A3CC02EB262ED04800E2720A /* EncryptTogView.swift */,
+				A3CC02F2262ED19000E2720A /* Config.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		A3CC02FF262ED23000E2720A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A3CC0300262ED24500E2720A /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D9775E46F7CD256594F6D7FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B01F7C7AC5C2536A2B1E66A /* Pods-SwiftyLoganTool.debug.xcconfig */,
+				F87930A780F1B712C1546534 /* Pods-SwiftyLoganTool.release.xcconfig */,
+				B34139AB50389962AC1BBF61 /* Pods-SwiftyLoganTool-SwiftyLoganToolUITests.debug.xcconfig */,
+				310C3B1D86D469208CEE7892 /* Pods-SwiftyLoganTool-SwiftyLoganToolUITests.release.xcconfig */,
+				89F495EEC4075BA39C4C6883 /* Pods-SwiftyLoganToolTests.debug.xcconfig */,
+				85D221C4D9B1F4DDDEAF41C5 /* Pods-SwiftyLoganToolTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3CC0266262ECD8300E2720A /* SwiftyLoganTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3CC0290262ECD8500E2720A /* Build configuration list for PBXNativeTarget "SwiftyLoganTool" */;
+			buildPhases = (
+				38D6FF3DD2BC5B76C34B7B88 /* [CP] Check Pods Manifest.lock */,
+				A3CC0263262ECD8300E2720A /* Sources */,
+				A3CC0264262ECD8300E2720A /* Frameworks */,
+				A3CC0265262ECD8300E2720A /* Resources */,
+				01AD2455FDCE7205F5DAB8FB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyLoganTool;
+			productName = SwiftyLoganTool;
+			productReference = A3CC0267262ECD8300E2720A /* SwiftyLoganTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3CC027B262ECD8500E2720A /* SwiftyLoganToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3CC0293262ECD8500E2720A /* Build configuration list for PBXNativeTarget "SwiftyLoganToolTests" */;
+			buildPhases = (
+				6F00E0EE7C06BCF14CEA633E /* [CP] Check Pods Manifest.lock */,
+				A3CC0278262ECD8500E2720A /* Sources */,
+				A3CC0279262ECD8500E2720A /* Frameworks */,
+				A3CC027A262ECD8500E2720A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3CC027E262ECD8500E2720A /* PBXTargetDependency */,
+			);
+			name = SwiftyLoganToolTests;
+			productName = SwiftyLoganToolTests;
+			productReference = A3CC027C262ECD8500E2720A /* SwiftyLoganToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3CC0286262ECD8500E2720A /* SwiftyLoganToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3CC0296262ECD8500E2720A /* Build configuration list for PBXNativeTarget "SwiftyLoganToolUITests" */;
+			buildPhases = (
+				E8993C4DFA1CB85E5D7F19A9 /* [CP] Check Pods Manifest.lock */,
+				A3CC0283262ECD8500E2720A /* Sources */,
+				A3CC0284262ECD8500E2720A /* Frameworks */,
+				A3CC0285262ECD8500E2720A /* Resources */,
+				26AC6340126771554448AFA3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3CC0289262ECD8500E2720A /* PBXTargetDependency */,
+			);
+			name = SwiftyLoganToolUITests;
+			productName = SwiftyLoganToolUITests;
+			productReference = A3CC0287262ECD8500E2720A /* SwiftyLoganToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3CC025F262ECD8300E2720A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A3CC0266262ECD8300E2720A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A3CC027B262ECD8500E2720A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A3CC0266262ECD8300E2720A;
+					};
+					A3CC0286262ECD8500E2720A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A3CC0266262ECD8300E2720A;
+					};
+				};
+			};
+			buildConfigurationList = A3CC0262262ECD8300E2720A /* Build configuration list for PBXProject "SwiftyLoganTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3CC025E262ECD8300E2720A;
+			productRefGroup = A3CC0268262ECD8300E2720A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3CC0266262ECD8300E2720A /* SwiftyLoganTool */,
+				A3CC027B262ECD8500E2720A /* SwiftyLoganToolTests */,
+				A3CC0286262ECD8500E2720A /* SwiftyLoganToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3CC0265262ECD8300E2720A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CC0275262ECD8500E2720A /* Main.storyboard in Resources */,
+				A3CC0272262ECD8500E2720A /* Preview Assets.xcassets in Resources */,
+				A3CC026F262ECD8500E2720A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CC027A262ECD8500E2720A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CC0285262ECD8500E2720A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01AD2455FDCE7205F5DAB8FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftyLoganTool/Pods-SwiftyLoganTool-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftyLoganTool/Pods-SwiftyLoganTool-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftyLoganTool/Pods-SwiftyLoganTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26AC6340126771554448AFA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftyLoganTool-SwiftyLoganToolUITests/Pods-SwiftyLoganTool-SwiftyLoganToolUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftyLoganTool-SwiftyLoganToolUITests/Pods-SwiftyLoganTool-SwiftyLoganToolUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftyLoganTool-SwiftyLoganToolUITests/Pods-SwiftyLoganTool-SwiftyLoganToolUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38D6FF3DD2BC5B76C34B7B88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftyLoganTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F00E0EE7C06BCF14CEA633E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftyLoganToolTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8993C4DFA1CB85E5D7F19A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftyLoganTool-SwiftyLoganToolUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3CC0263262ECD8300E2720A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CC026D262ECD8300E2720A /* ContentView.swift in Sources */,
+				A3CC02FB262ED21300E2720A /* LoganManager.swift in Sources */,
+				A3CC02EC262ED04800E2720A /* DecryptTogView.swift in Sources */,
+				A3CC02DD262ECF6E00E2720A /* NSData+AES256.m in Sources */,
+				A3CC02DF262ECF6E00E2720A /* GTMBase64.m in Sources */,
+				A3CC02DE262ECF6E00E2720A /* LFCGzipUtility.m in Sources */,
+				A3CC02F3262ED19000E2720A /* Config.swift in Sources */,
+				A3CC02ED262ED04800E2720A /* EncryptTogView.swift in Sources */,
+				A3CC0301262ED24500E2720A /* String+Extension.swift in Sources */,
+				A3CC026B262ECD8300E2720A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CC0278262ECD8500E2720A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CC0281262ECD8500E2720A /* SwiftyLoganToolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CC0283262ECD8500E2720A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CC028C262ECD8500E2720A /* SwiftyLoganToolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3CC027E262ECD8500E2720A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3CC0266262ECD8300E2720A /* SwiftyLoganTool */;
+			targetProxy = A3CC027D262ECD8500E2720A /* PBXContainerItemProxy */;
+		};
+		A3CC0289262ECD8500E2720A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3CC0266262ECD8300E2720A /* SwiftyLoganTool */;
+			targetProxy = A3CC0288262ECD8500E2720A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3CC0273262ECD8500E2720A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3CC0274262ECD8500E2720A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3CC028E262ECD8500E2720A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3CC028F262ECD8500E2720A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A3CC0291262ECD8500E2720A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B01F7C7AC5C2536A2B1E66A /* Pods-SwiftyLoganTool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftyLoganTool/SwiftyLoganTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftyLoganTool/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftyLoganTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuyoufang.SwiftyLoganTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyLoganTool/SwiftyLoganTool-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A3CC0292262ECD8500E2720A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F87930A780F1B712C1546534 /* Pods-SwiftyLoganTool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftyLoganTool/SwiftyLoganTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftyLoganTool/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftyLoganTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuyoufang.SwiftyLoganTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyLoganTool/SwiftyLoganTool-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A3CC0294262ECD8500E2720A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F495EEC4075BA39C4C6883 /* Pods-SwiftyLoganToolTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftyLoganToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuyoufang.SwiftyLoganToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyLoganTool.app/Contents/MacOS/SwiftyLoganTool";
+			};
+			name = Debug;
+		};
+		A3CC0295262ECD8500E2720A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85D221C4D9B1F4DDDEAF41C5 /* Pods-SwiftyLoganToolTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftyLoganToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuyoufang.SwiftyLoganToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyLoganTool.app/Contents/MacOS/SwiftyLoganTool";
+			};
+			name = Release;
+		};
+		A3CC0297262ECD8500E2720A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B34139AB50389962AC1BBF61 /* Pods-SwiftyLoganTool-SwiftyLoganToolUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftyLoganToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuyoufang.SwiftyLoganToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SwiftyLoganTool;
+			};
+			name = Debug;
+		};
+		A3CC0298262ECD8500E2720A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 310C3B1D86D469208CEE7892 /* Pods-SwiftyLoganTool-SwiftyLoganToolUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftyLoganToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fuyoufang.SwiftyLoganToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SwiftyLoganTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3CC0262262ECD8300E2720A /* Build configuration list for PBXProject "SwiftyLoganTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3CC028E262ECD8500E2720A /* Debug */,
+				A3CC028F262ECD8500E2720A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3CC0290262ECD8500E2720A /* Build configuration list for PBXNativeTarget "SwiftyLoganTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3CC0291262ECD8500E2720A /* Debug */,
+				A3CC0292262ECD8500E2720A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3CC0293262ECD8500E2720A /* Build configuration list for PBXNativeTarget "SwiftyLoganToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3CC0294262ECD8500E2720A /* Debug */,
+				A3CC0295262ECD8500E2720A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3CC0296262ECD8500E2720A /* Build configuration list for PBXNativeTarget "SwiftyLoganToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3CC0297262ECD8500E2720A /* Debug */,
+				A3CC0298262ECD8500E2720A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3CC025F262ECD8300E2720A /* Project object */;
+}
