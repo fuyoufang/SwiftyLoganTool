@@ -11,98 +11,8 @@
 #import "GTMBase64.h"
 
 
-@implementation NSData (AES256)
-//  加密
-- (NSData *)aes256_encrypt:(NSString *)text AESKey:(NSString*)aesKey{
-    NSData *enData = [text dataUsingEncoding:NSUTF8StringEncoding];
-    //    NSLog(@"text ：%@",text);
-    //    NSLog(@"enData ：%@",enData);
-    //    NSString *MD5key = @"XwKsGlMcdPMEhR1B";
-    NSData *key = [aesKey dataUsingEncoding:NSUTF8StringEncoding];
-    NSData *iv = [aesKey dataUsingEncoding:NSUTF8StringEncoding];
-    
-    if (key.length != 16 && key.length != 24 && key.length != 32) {
-        return nil;
-    }
-    if (iv.length != 16 && iv.length != 0) {
-        return nil;
-    }
-    
-    NSData *result = nil;
-    size_t bufferSize = enData.length + kCCBlockSizeAES128;
-    void *buffer = malloc(bufferSize);
-    if (!buffer) return nil;
-    size_t encryptedSize = 0;
-    CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt,
-                                          kCCAlgorithmAES128,
-                                          kCCOptionPKCS7Padding | kCCOptionECBMode,//填充方式
-                                          key.bytes,
-                                          key.length,
-                                          iv.bytes,
-                                          enData.bytes,
-                                          enData.length,
-                                          buffer,
-                                          bufferSize,
-                                          &encryptedSize);
-    if (cryptStatus == kCCSuccess) {
-        result = [[NSData alloc]initWithBytes:buffer length:encryptedSize];
-        free(buffer);
-        //        NSLog(@"result ：%@",result);
-        
-        return result;
-    } else {
-        free(buffer);
-        return nil;
-    }
-}
-
-- (NSData *)aes256_decrypt:(NSString *)text AESKey:(NSString*)aesKey{
-    NSData *deData = self;// [text dataUsingEncoding:NSUTF8StringEncoding];
-    NSData *key = [text dataUsingEncoding:NSUTF8StringEncoding];
-    NSData *iv = [aesKey dataUsingEncoding:NSUTF8StringEncoding];
-    
-    if (key.length != 16 && key.length != 24 && key.length != 32) {
-        return nil;
-    }
-    if (iv.length != 16 && iv.length != 0) {
-        return nil;
-    }
-    
-    NSData *result = nil;
-    size_t bufferSize = deData.length + kCCBlockSizeAES128;
-    void *buffer = malloc(bufferSize);
-    if (!buffer) return nil;
-    size_t encryptedSize = 0;
-    CCOptions options = kCCOptionPKCS7Padding | kCCOptionECBMode;
-    //      0x00 表示 no padding
-    //    CCOptions options = 0x00;
-    CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt,
-                                          kCCAlgorithmAES,
-                                          options,//填充方式
-                                          key.bytes,
-                                          key.length,
-                                          iv.bytes,
-                                          deData.bytes,
-                                          deData.length,
-                                          buffer,
-                                          bufferSize,
-                                          &encryptedSize);
-    if (cryptStatus == kCCSuccess) {
-        result = [[NSData alloc]initWithBytes:buffer length:encryptedSize];
-        NSLog(@"result ：%@",result);
-        free(buffer);
-        return result;
-    } else {
-        free(buffer);
-        return nil;
-    }
-    
-}
-
-@end
-
-
 @implementation NSData (Encryption)
+
 //(key和iv向量这里是16位的) 这里是CBC加密模式，安全性更高
 - (NSData *)AES128EncryptWithKey:(NSString *)key Iv:(NSString *)Iv{//加密
     // 'key' should be 32 bytes for AES128, will be null-padded otherwise
@@ -175,11 +85,11 @@
     return nil;
 }
 
-// URL安全的Base64编码
 + (NSString *)URLSafeBase64Encode:(NSData *)text {
     NSString *base64 = [[NSString alloc] initWithData:[GTMBase64 encodeData:text] encoding:NSUTF8StringEncoding];
     base64 = [base64 stringByReplacingOccurrencesOfString:@"+" withString:@"-"];
     base64 = [base64 stringByReplacingOccurrencesOfString:@"/" withString:@"_"];
     return base64;
 }
+
 @end

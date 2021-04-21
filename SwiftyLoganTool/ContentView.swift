@@ -72,7 +72,7 @@ struct ContentView: View {
                 EncryptTogView()
             }
         }
-        .frame(minWidth: 1000, idealWidth: 1000, minHeight: 1000, idealHeight: 1000, alignment: .center)
+        .frame(minWidth: 500, minHeight: 500, alignment: .center)
         
     }
     
